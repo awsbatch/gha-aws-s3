@@ -1,0 +1,23 @@
+name: AWS S3 Website hosting
+on: push
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code from repo
+        uses: actions/checkout@v4
+
+      - name: Configure aws cred
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          aws-region: us-east-1
+          aws-access-key-id: ${{ secrets.AWS_SECRET_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_ACCESS_KEY }}
+
+      - name: Copy code to s3
+        run: |
+          aws s3 sync ./ s3://gha-website-demo-host-static-website/ \
+          --exclude "*" \
+          --include "index.html"
+          
+          
