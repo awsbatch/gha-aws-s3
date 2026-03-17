@@ -1,93 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Sample Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
 
     <style>
-        /* Global Dark Theme */
         body {
             margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #121212;
-            color: #e0e0e0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
         }
 
         header {
-            background: #1f1f1f;
-            padding: 25px;
+            background: #0078ff;
+            color: white;
+            padding: 20px;
             text-align: center;
-            border-bottom: 1px solid #333;
-        }
-
-        header h1 {
-            margin: 0;
-            color: #ffffff;
         }
 
         nav {
-            background: #181818;
-            display: flex;
-            justify-content: center;
-            border-bottom: 1px solid #333;
+            background: #333;
+            overflow: hidden;
         }
 
         nav a {
-            color: #cccccc;
+            float: left;
+            display: block;
+            color: white;
             padding: 14px 20px;
             text-decoration: none;
-            font-size: 16px;
         }
 
         nav a:hover {
-            background: #333;
-            color: #fff;
+            background: #575757;
         }
 
         .hero {
             padding: 80px 20px;
             text-align: center;
-            background: #1a1a1a;
+            background: white;
         }
 
         .hero h1 {
-            font-size: 42px;
-            color: #ffffff;
+            font-size: 40px;
+            color: #333;
         }
 
         .hero p {
             font-size: 18px;
-            color: #bbbbbb;
+            color: #555;
         }
 
         .container {
             padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
         }
 
         .card {
-            background: #1c1c1c;
-            padding: 25px;
-            margin: 15px 0;
-            border-radius: 10px;
-            border: 1px solid #333;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         footer {
-            background: #181818;
-            color: #bbbbbb;
-            text-align: center;
+            background: #333;
+            color: white;
             padding: 20px;
+            text-align: center;
             margin-top: 40px;
-            border-top: 1px solid #333;
         }
     </style>
 </head>
@@ -95,40 +77,40 @@
 <body>
 
     <header>
-        <h1>🌙 S3 Static Sample Website</h1>
-        <p>Clean • Modern • Responsive</p>
+        <h1>Welcome to My Sample Website</h1>
+        <p>A simple responsive HTML page</p>
     </header>
 
     <nav>
-        <a href="#">Home  #About</a>
-        #Services</a>
+        <a href="#">Home</a>
+        <       #Services</a>
         #Contact</a>
     </nav>
 
     <section class="hero">
-        <h1>Welcome to the Dark Side</h1>
-        <p>Experience a beautiful, modern dark‑mode theme that’s easy on the eyes.</p>
+        <h1>This is a Hero Section</h1>
+        <p>Your amazing website starts here. Add your content and customize it!</p>
     </section>
 
     <div class="container">
         <div class="card">
-            <h2>About</h2>
-            <p>This is a clean dark‑mode template. Customize it to suit your brand or project.</p>
+            <h2>About Us</h2>
+            <p>This is a sample card section. You can replace this text with your own content.</p>
         </div>
 
         <div class="card">
-            <h2>Services</h2>
-            <p>We provide web development, UI/UX design, cloud solutions and more.</p>
+            <h2>Our Services</h2>
+            <p>We offer web development, cloud solutions, and automation services.</p>
         </div>
 
         <div class="card">
             <h2>Contact</h2>
-            <p>Email: contact@example.com</p>
+            <p>Email: info@example.com</p>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Dark Mode Sample. All rights reserved.
+        &copy; 2026 Sample Website. All rights reserved.
     </footer>
 
 </body>
